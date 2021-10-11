@@ -20,6 +20,7 @@ namespace DesignPattern.Strategy
         {
             Duck mallard = new MallardDuck();
             mallard.PerformFly();
+            mallard.PerformQuack();
         }
     }
 }

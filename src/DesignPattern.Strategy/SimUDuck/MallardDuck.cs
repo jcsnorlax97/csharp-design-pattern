@@ -1,4 +1,5 @@
 ﻿using DesignPattern.Strategy.SimUDuck.FlyBehaviors;
+using DesignPattern.Strategy.SimUDuck.QuackBehaviors;
 
 namespace DesignPattern.Strategy.SimUDuck
 {
@@ -7,6 +8,7 @@ namespace DesignPattern.Strategy.SimUDuck
         public MallardDuck()
         {
             _flyBehavior = new FlyWithWings();
+            _quackBehavior = new NormalQuack();
         }
     }
 }
