@@ -8,6 +8,9 @@ namespace DesignPattern.Strategy.SimUDuck
         protected IFlyBehavior _flyBehavior;
         protected IQuackBehavior _quackBehavior;
 
+        // --------------------------------------------------
+        // Behaviors - Delegate Function
+        // --------------------------------------------------
         public void PerformFly()
         {
             _flyBehavior.Fly();
@@ -16,6 +19,24 @@ namespace DesignPattern.Strategy.SimUDuck
         public void PerformQuack()
         {
             _quackBehavior.Quack();
+        }
+
+        // --------------------------------------------------
+        // Others
+        // --------------------------------------------------
+        public abstract void Display();
+
+        // --------------------------------------------------
+        // Mutators - Setting Behavior Dynamically
+        // --------------------------------------------------
+        public void SetFlyBehavior(IFlyBehavior flyBehavior)
+        {
+            _flyBehavior = flyBehavior;
+        }
+
+        public void SetQuackBehavior(IQuackBehavior quackBehavior)
+        {
+            _quackBehavior = quackBehavior;
         }
     }
 }

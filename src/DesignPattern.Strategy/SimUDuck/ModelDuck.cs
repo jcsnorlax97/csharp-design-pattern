@@ -4,17 +4,17 @@ using System;
 
 namespace DesignPattern.Strategy.SimUDuck
 {
-    public class MallardDuck : Duck
+    public class ModelDuck : Duck
     {
-        public MallardDuck()
+        public ModelDuck()
         {
-            _flyBehavior = new FlyWithWings();
+            _flyBehavior = new FlyNoWay();
             _quackBehavior = new NormalQuack();
         }
 
         public override void Display()
         {
-            Console.WriteLine("[*][Mallard Duck]");
+            Console.WriteLine("[*][Model Duck]");
         }
     }
 }

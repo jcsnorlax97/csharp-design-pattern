@@ -1,4 +1,6 @@
 ﻿using DesignPattern.Strategy.SimUDuck;
+using DesignPattern.Strategy.SimUDuck.FlyBehaviors;
+using System;
 
 namespace DesignPattern.Strategy
 {
@@ -9,18 +11,20 @@ namespace DesignPattern.Strategy
             SimulateMiniDuck();
         }
 
-        /**
-         * Interfaces: Duck, IFlyBehavior
-         * Duck: (i) Has-A FlyBehavior
-         * MallardDuck: Is-A Duck
-         * IFlyBehavior: N/A
-         * FlyWithWings & FlyNoWay: Is-A IFlyBehavior
-         */
         public static void SimulateMiniDuck()
         {
             Duck mallard = new MallardDuck();
+            mallard.Display();
             mallard.PerformFly();
             mallard.PerformQuack();
+            Console.WriteLine("");
+
+            Duck model = new ModelDuck();
+            model.Display();
+            model.PerformFly();
+            model.SetFlyBehavior(new FlyRocketPowered());
+            model.PerformFly();
+            Console.WriteLine("");
         }
     }
 }
