@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.Strategy", "src\DesignPattern.Strategy\DesignPattern.Strategy.csproj", "{508CD4A2-1DB7-472E-9F46-180245BA6525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Observer.Push", "src\DesignPattern.Observer\DesignPattern.Observer.Push.csproj", "{87446141-5E40-4096-B2F1-FAB535267E15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Observer.Push", "src\DesignPattern.Observer.Push\DesignPattern.Observer.Push.csproj", "{87446141-5E40-4096-B2F1-FAB535267E15}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Observer.Pull", "src\DesignPattern.Observer.Pull\DesignPattern.Observer.Pull.csproj", "{6D133CDF-98BE-4E69-A976-8532AD82EF15}"
 EndProject
