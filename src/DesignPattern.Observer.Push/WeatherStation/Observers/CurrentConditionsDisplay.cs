@@ -11,7 +11,7 @@ namespace DesignPattern.Observer.Push.WeatherStation.Observers
         public CurrentConditionsDisplay(ISubject weatherData)
         {
             _weatherData = weatherData;
-            weatherData.RegisterObserver(this);
+            _weatherData.RegisterObserver(this);
         }
 
         // --------------------------------------------------

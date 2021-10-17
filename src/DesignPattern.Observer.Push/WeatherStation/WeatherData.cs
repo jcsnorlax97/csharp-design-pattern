@@ -49,11 +49,6 @@ namespace DesignPattern.Observer.Push.WeatherStation
             _temperature = temperature;
             _humidity = humidity;
             _pressure = pressure;
-            MeasurementsChanged();
-        }
-
-        private void MeasurementsChanged()
-        {
             NotifyObservers();
         }
     }

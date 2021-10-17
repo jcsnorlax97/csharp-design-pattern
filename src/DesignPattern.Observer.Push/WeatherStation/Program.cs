@@ -9,7 +9,8 @@ namespace DesignPattern.Observer
         {
             // Inititalize Subjects & Observers
             WeatherData weatherData = new WeatherData(); // Subject (with State)
-            CurrentConditionsDisplay _ = new CurrentConditionsDisplay(weatherData); // Observer
+            CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData); // Observer
+            StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData); // Observer
 
             // Simulate State Changes
             weatherData.SetMeasurements(80, 65, 30.4f);
